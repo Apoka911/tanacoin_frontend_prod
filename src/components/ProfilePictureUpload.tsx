@@ -6,7 +6,7 @@ interface ProfilePictureUploadProps {
   onProfilePictureChange: (image: string) => void;
   onRemoveImage: () => void;
   imagePreview: string | null;
-  fileInputRef: React.RefObject<HTMLInputElement>; // Allow null for initial value
+  fileInputRef: React.RefObject<HTMLInputElement | null>; // Allow null for initial value
 }
 
 const ProfilePictureUpload: React.FC<ProfilePictureUploadProps> = ({
